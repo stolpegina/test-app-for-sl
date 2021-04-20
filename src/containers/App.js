@@ -18,11 +18,11 @@ class App extends React.Component {
   render() {
   return (
     <div className="App">
-      <div>
+      <div className="all-posts">
         <h2>All</h2>
         <Posts posts={this.props.posts} moveToFavorites={this.props.moveToFavorites}/>
       </div>
-      <div>
+      <div className="favorites-posts">
         <h2>Favorites</h2>      
         <Favorites posts={this.props.posts} moveToFavorites={this.props.moveToFavorites}/>
         <Form addPost={this.props.addPost}/>

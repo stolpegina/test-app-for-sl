@@ -1,13 +1,16 @@
 import React from 'react';
 
 const PostItem = (props) => {
+    const className = props.isFavorite ? 'checked' : '';
+    console.log(props);
+
     return (
-        <li>
-            <div>{props.id}</div>
-            <div>{props.userId}</div>
-            <div>{props.title}</div>
-            <div>{props.body}</div>
-            <button onClick={props.moveToFavorites}>Move To Favorites</button>
+        <li key={props.id}> 
+            <div className="post-section">
+                <h3>{props.title}</h3>
+                <p>{props.body}</p>
+            </div>
+            <button className={"move-to-favorites " + className} onClick={props.moveToFavorites}></button>
         </li>
     )
 }

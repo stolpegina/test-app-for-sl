@@ -1,39 +1,83 @@
+html, body {
+	min-width: 450px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+  text-align: left;
+  margin: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+li {
+  display: flex;
+  list-style-type: none;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+ol {
+  margin-left: 0; 
+  padding-left: 0; 
+}
+
+label {
+  display: block;
+}
+
+.submit {
+  display: block;
+}
+
+.move-to-favorites{
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  margin: 15px 10px 0 0;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.move-to-favorites:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  font-size: 25px;;
+  color: #484848;
+}
+
+.checked:before {
+  color: #ff5722;
+}
+
+.all-posts{
+  max-width: 45%;
+  margin: 0 10px;
+}
+
+.favorites-posts{
+  width: 100%;
+  margin: 0 10px;
+}
+
+.post-section{
+  width: 100%;  
+}
+
+label {
+    display: block;
+}
+
+#input{
+  border: 1px solid;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#textarea {
+  border: 1px solid;
+  border-radius: 5px;
+  width: 100%;
 }

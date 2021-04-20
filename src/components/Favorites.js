@@ -10,6 +10,7 @@ const Favorites = (props) =>{
                 <PostItem
                 key={post.id}
                 userId={post.userId}
+                isFavorite={post.isFavorite}
                 title={post.title}
                 body={post.body}
                 moveToFavorites={() => props.moveToFavorites(post.id)}
